@@ -11,3 +11,4 @@ class WichaForm(forms.ModelForm):
         model = wicha
         fields = ['subject_id','name']
 #ทดสอบ branch 1111
+mlll = 10
