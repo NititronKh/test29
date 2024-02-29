@@ -10,3 +10,5 @@ class WichaForm(forms.ModelForm):
     class Meta:
         model = wicha
         fields = ['subject_id','name']
+
+#testt
