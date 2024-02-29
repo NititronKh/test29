@@ -1,0 +1,6 @@
+<form method="post" enctype="multipart/form-data" action="{% url 'create' %}">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">บันทึก</button>
+  </form>
+  

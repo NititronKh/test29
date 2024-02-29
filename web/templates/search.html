@@ -1,0 +1,22 @@
+<!-- search_results.html -->
+<form method="get" action="{% url 'search' %}">
+    {{ form.as_p }}
+    <button type="submit">Search</button>
+</form>
+{% if results %}
+{% for item in results %}
+    <p>
+        {{ item.subject_id }} - {{ item.name }}
+        <a href="{% url 'update_item' item.id %}">Update</a>
+        <a href="{% url 'delete_item' item.id %}">Delete</a>
+    </p>
+{% endfor %}
+{% elif results2 %}
+{% for item in results2 %}
+    <p>
+        {{ item.subject_id }} - {{ item.name }}
+        <a href="{% url 'update_item' item.id %}">Update</a>
+        <a href="{% url 'delete_item' item.id %}">Delete</a>
+    </p>
+{% endfor %}
+{% endif %}
