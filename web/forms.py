@@ -10,4 +10,4 @@ class WichaForm(forms.ModelForm):
     class Meta:
         model = wicha
         fields = ['subject_id','name']
-#ทดสอบ branch
+#ทดสอบ branch 1111
